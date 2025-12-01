@@ -14,7 +14,7 @@ interface HoursContactSectionProps {
 
 const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking, customCtaContent }) => {
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-500 to-orange-600 text-white">
+    <section className="py-20 bg-gradient-to-br from-yellow-500 to-yellow-600 text-black">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -27,7 +27,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-black/10 backdrop-blur-sm rounded-2xl p-8 border border-black/20">
               <div className="flex items-center mb-6">
                 <Clock className="w-8 h-8 mr-4" />
                 <h3 className="text-2xl font-bold">AUKIOLOAJAT</h3>
@@ -48,7 +48,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="bg-black/10 backdrop-blur-sm rounded-2xl p-8 border border-black/20">
               <div className="flex items-center mb-6">
                 <Phone className="w-8 h-8 mr-4" />
                 <h3 className="text-2xl font-bold">YHTEYSTIEDOT</h3>
@@ -56,18 +56,18 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
               <div className="space-y-4 text-lg">
                 <a
                   href="tel:+358407736334"
-                  className="flex items-center hover:text-orange-200 transition-colors"
+                  className="flex items-center hover:text-yellow-200 transition-colors"
                 >
-                  <Phone className="w-5 h-5 mr-3" />
+                  <Phone className="w-5 h-5 mr-3 text-yellow-300" />
                   +358 407736334
                 </a>
                 <a
                   href="https://maps.app.goo.gl/fhJGDGEQWfo1ZRxGA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center hover:text-orange-200 transition-colors"
+                  className="flex items-center hover:text-yellow-200 transition-colors"
                 >
-                  <MapPin className="w-5 h-5 mr-3" />
+                  <MapPin className="w-5 h-5 mr-3 text-yellow-300" />
                   Heinolankaari 9, Kokkola 67600
                 </a>
                 <div className="flex items-center space-x-4 pt-4">
@@ -75,7 +75,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
                     href="https://www.instagram.com/k_parturi_kokkola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-200 transition-colors"
+                    className="hover:text-yellow-200 transition-colors"
                     title="Instagram"
                   >
                     <PiInstagramLogo className="w-6 h-6" />
@@ -84,7 +84,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
                     href="https://www.tiktok.com/@k_parturi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-200 transition-colors"
+                    className="hover:text-yellow-200 transition-colors"
                     title="TikTok"
                   >
                     <PiTiktokLogo className="w-6 h-6" />
@@ -93,7 +93,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
                     href="https://www.facebook.com/people/K-Parturi/61582622773569/#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-200 transition-colors"
+                    className="hover:text-yellow-200 transition-colors"
                     title="Facebook"
                   >
                     <PiFacebookLogo className="w-6 h-6" />
@@ -102,7 +102,7 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
                     href="https://wa.me/358407736334?text=Hei%2C%20haluaisin%20tiedustella%20palveluistanne%20ja%20ajanvarauksesta.%20Voisitteko%20auttaa%20minua%3F"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-orange-200 transition-colors"
+                    className="hover:text-yellow-200 transition-colors"
                     title="WhatsApp"
                   >
                     <PiWhatsappLogo className="w-6 h-6" />
@@ -122,13 +122,13 @@ const HoursContactSection: React.FC<HoursContactSectionProps> = ({ onOpenBooking
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <button
                   onClick={onOpenBooking}
-                  className="bg-white text-orange-600 px-8 py-4 rounded-xl text-xl font-bold hover:bg-orange-50 transition-all duration-300"
+                 className="bg-black text-yellow-400 px-8 py-4 rounded-xl text-xl font-bold hover:bg-gray-900 transition-all duration-300"
                 >
                   VARAA AIKA NYT
                 </button>
                 <a
                   href="tel:+358407736334"
-                  className="border-2 border-white px-8 py-4 rounded-xl text-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300"
+                 className="border-2 border-black px-8 py-4 rounded-xl text-xl font-bold hover:bg-black hover:text-yellow-400 transition-all duration-300"
                 >
                   TAI SOITA
                 </a>

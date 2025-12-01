@@ -74,7 +74,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-500 to-orange-600 text-white min-h-screen flex items-center">
+      <section className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-black min-h-screen flex items-center">
         <div className="container mx-auto px-6 py-10 md:py-20">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
@@ -103,13 +103,13 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={onOpenBooking}
-                className="bg-white text-orange-600 px-8 py-4 rounded-xl text-xl font-bold hover:bg-orange-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-black text-yellow-400 px-8 py-4 rounded-xl text-xl font-bold hover:bg-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 VARAA AIKA
               </button>
               <a
                 href="tel:+358407736334"
-                className="border-2 border-white px-8 py-4 rounded-xl text-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300"
+                className="border-2 border-black px-8 py-4 rounded-xl text-xl font-bold hover:bg-black hover:text-yellow-400 transition-all duration-300"
               >
                 SOITA NYT
               </a>
@@ -311,15 +311,15 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                     <img
                       src="/hair_clipper.svg"
                       alt="Hair Clipper"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                     <img
                       src="/scissor.svg"
                       alt="Scissor"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                   </div>
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     25€
                   </span>
                 </div>
@@ -338,15 +338,15 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                     <img
                       src="/scissor.svg"
                       alt="Scissor"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                     <img
                       src="/comb.svg"
                       alt="Comb"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                   </div>
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     35€
                   </span>
                 </div>
@@ -364,9 +364,9 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                   <img
                     src="/kid_haircut.svg"
                     alt="Kid Haircut"
-                    className="w-12 h-12 text-orange-500"
+                    className="w-12 h-12 text-yellow-500"
                   />
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     20€
                   </span>
                 </div>
@@ -385,15 +385,15 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                     <img
                       src="/one_height_hair.svg"
                       alt="One Height Hair"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                     <img
                       src="/hair_clipper.svg"
                       alt="Hair Clipper"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                   </div>
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     20€
                   </span>
                 </div>
@@ -411,15 +411,15 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                     <img
                       src="/hair-style.svg"
                       alt="Hair Style"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                     <img
                       src="/razor.svg"
                       alt="Razor"
-                      className="w-12 h-12 text-orange-500"
+                      className="w-12 h-12 text-yellow-500"
                     />
                   </div>
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     20€
                   </span>
                 </div>
@@ -437,9 +437,9 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                   <img
                     src="/hair_wash_1.svg"
                     alt="Hair Wash"
-                    className="w-12 h-12 text-orange-500"
+                    className="w-12 h-12 text-yellow-500"
                   />
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     10€
                   </span>
                 </div>
@@ -456,9 +456,9 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                   <img
                     src="/beard-trimming.svg"
                     alt="Beard Trimming"
-                    className="w-12 h-12 text-orange-500"
+                    className="w-12 h-12 text-yellow-500"
                   />
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     25€
                   </span>
                 </div>
@@ -475,9 +475,9 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                   <img
                     src="/shaving_with_blade .svg"
                     alt="Shaving with Blade"
-                    className="w-12 h-12 text-orange-500"
+                    className="w-12 h-12 text-yellow-500"
                   />
-                  <span className="text-3xl font-black text-orange-500">
+                  <span className="text-3xl font-black text-yellow-500">
                     25€
                   </span>
                 </div>
@@ -540,7 +540,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenBooking }) => {
                 href="https://www.instagram.com/k_parturi_kokkola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-orange-500 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center bg-yellow-500 text-black px-8 py-4 rounded-xl text-lg font-bold hover:bg-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 KATSO LISÄÄ TÖITÄMME
               </a>

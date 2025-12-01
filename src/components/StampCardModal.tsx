@@ -34,7 +34,7 @@ const StampCardModal: React.FC<StampCardModalProps> = ({ isOpen, onClose, onOpen
         {/* Header */}
         <div className="sticky top-0 z-10 bg-white flex justify-between items-center p-4 sm:p-6 border-b border-gray-200 rounded-none sm:rounded-t-2xl">
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg sm:text-xl">
                 {userStampCardName ? userStampCardName.charAt(0).toUpperCase() : 'K'}
               </span>
