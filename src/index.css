@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent body scroll when modal is open */
+.body-no-scroll {
+  overflow: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure modal content is scrollable */
+.modal-content {
+  -webkit-overflow-scrolling: touch;
+}
