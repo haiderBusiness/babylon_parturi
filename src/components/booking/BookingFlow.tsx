@@ -184,7 +184,7 @@ const BookingFlow: React.FC<BookingFlowProps> = ({
                 <div
                   className={`flex-1 py-4 text-center ${
                     step.number === currentStep
-                      ? 'bg-orange-500 text-white'
+                      ? 'bg-yellow-500 text-black'
                       : step.number < currentStep
                       ? 'bg-green-500 text-white'
                       : 'bg-gray-100 text-gray-600 opacity-50'
@@ -193,7 +193,7 @@ const BookingFlow: React.FC<BookingFlowProps> = ({
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2 ${
                       step.number === currentStep
-                        ? 'bg-white text-orange-500'
+                        ? 'bg-black text-yellow-400'
                         : step.number < currentStep
                         ? 'bg-white text-green-500'
                         : 'bg-gray-300 text-gray-600'
@@ -226,7 +226,7 @@ const BookingFlow: React.FC<BookingFlowProps> = ({
                 key={step.number}
                 className={`flex-shrink-0 w-[80%] py-2 relative ${
                   step.number === currentStep
-                    ? 'bg-orange-500 text-white'
+                    ? 'bg-yellow-500 text-black'
                     : step.number < currentStep
                     ? 'bg-green-500 text-white'
                     : 'bg-gray-100 text-gray-600 opacity-50'
@@ -236,7 +236,7 @@ const BookingFlow: React.FC<BookingFlowProps> = ({
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
                       step.number === currentStep
-                        ? 'bg-white text-orange-500'
+                        ? 'bg-black text-yellow-400'
                         : step.number < currentStep
                         ? 'bg-white text-green-500'
                         : 'bg-gray-300 text-gray-600'
@@ -333,7 +333,7 @@ const BookingFlow: React.FC<BookingFlowProps> = ({
                 (currentStep === 2 && (!selectedDate || !selectedTime)) ||
                 (currentStep === 3 && !isDetailsFormValid)
                   ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                  : 'bg-orange-500 text-white hover:bg-blue-700'
+                  : 'bg-yellow-500 text-black hover:bg-yellow-600'
               }`}
             >
               Seuraava

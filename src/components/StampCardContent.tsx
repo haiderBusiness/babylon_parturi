@@ -416,7 +416,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
         <div className="max-w-md mx-auto">
           {!isRequestMode && (
             <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Gift className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Käytä leimakorttiasi</h3>
@@ -442,7 +442,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                       }
                     }}
                     placeholder="Syötä sähköpostiosoitteesi tai suosittelukoodisi"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors"
                     disabled={isLoading || isCodeSending}
                   />
                 </div>
@@ -459,7 +459,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                   className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-300 ${
                     isLoading || isCodeSending || !inputIdentifier.trim()
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-orange-500 text-white hover:bg-orange-600'
+                      : 'bg-yellow-500 text-black hover:bg-yellow-600'
                   }`}
                 >
                   {isLoading || isCodeSending ? (
@@ -475,7 +475,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                 <div className="text-center pt-2">
                   <button
                     onClick={handleOpenRequestForm}
-                    className="text-orange-500 hover:text-orange-600 text-sm font-medium transition-colors underline"
+                    className="text-yellow-600 hover:text-yellow-700 text-sm font-medium transition-colors underline"
                   >
                     Eikö sinulla ole leimakorttia? Pyydä täältä
                   </button>
@@ -488,7 +488,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                 {!requestSuccess ? (
                   <>
                     <div className="text-center mb-4">
-                      <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <UserPlus className="w-8 h-8 text-white" />
                       </div>
                       <h4 className="text-lg font-bold text-gray-900 mb-2">Pyydä leimakortti</h4>
@@ -519,7 +519,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                         value={requestName}
                         onChange={(e) => setRequestName(e.target.value)}
                         placeholder="Syötä nimesi"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors"
                         disabled={isSubmittingRequest}
                       />
                     </div>
@@ -539,7 +539,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                           }
                         }}
                         placeholder="Syötä sähköpostiosoitteesi"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors"
                         disabled={isSubmittingRequest}
                       />
                     </div>
@@ -556,7 +556,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                       className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-300 ${
                         isSubmittingRequest || !requestName.trim() || !requestEmail.trim()
                           ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                          : 'bg-orange-500 text-white hover:bg-orange-600'
+                          : 'bg-yellow-500 text-black hover:bg-yellow-600'
                       }`}
                     >
                       {isSubmittingRequest ? (
@@ -589,7 +589,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                     </p>
                     <button
                       onClick={handleBackFromRequest}
-                      className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors"
+                      className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-600 transition-colors"
                     >
                       Sulje
                     </button>
@@ -626,7 +626,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                       }
                     }}
                     placeholder="Syötä 6-numeroinen koodi"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors text-center text-lg font-mono"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors text-center text-lg font-mono"
                     disabled={isCodeVerifying}
                     maxLength={6}
                   />
@@ -644,7 +644,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                   className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-300 ${
                     isCodeVerifying || !verificationCode.trim()
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-orange-500 text-white hover:bg-orange-600'
+                      : 'bg-yellow-500 text-black hover:bg-yellow-600'
                   }`}
                 >
                   {isCodeVerifying ? (
@@ -661,7 +661,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                   <button
                     onClick={handleResendCode}
                     disabled={isCodeSending}
-                    className="text-orange-500 hover:text-orange-600 text-sm font-medium transition-colors disabled:opacity-50"
+                    className="text-yellow-600 hover:text-yellow-700 text-sm font-medium transition-colors disabled:opacity-50"
                   >
                     {isCodeSending ? 'Lähetetään...' : 'Lähetä koodi uudelleen'}
                   </button>
@@ -692,7 +692,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
           <div className="text-center mb-6">
             <button
               onClick={handleLogout}
-              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-orange-500 border-2 border-orange-500 hover:bg-orange-500 hover:text-white rounded-lg transition-colors"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-600 border-2 border-yellow-500 hover:bg-yellow-500 hover:text-black rounded-lg transition-colors"
             >
               <LogOut className="w-4 h-4 mr-2" />
               Kirjaudu ulos
@@ -700,17 +700,17 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
           </div>
 
           {/* Stamp Card Section */}
-          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6">
+          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-3">
-                <Gift className="w-8 h-8 text-orange-500" />
+                <Gift className="w-8 h-8 text-yellow-600" />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">Leimakorttisi</h3>
                   <p className="text-gray-600">Kerää 10 leimaa ja saat ilmaisen hiustenleikkauksen!</p>
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-xl sm:text-3xl font-bold text-orange-500">
+                <div className="text-xl sm:text-3xl font-bold text-yellow-600">
                   {stampCardData?.stamps || 0}/{totalStamps}
                 </div>
                 <div className="text-sm text-gray-600">leimaa</div>
@@ -724,7 +724,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                   key={index}
                   className={`aspect-square rounded-lg border-2 border-dashed flex items-center justify-center text-xs sm:text-sm font-bold ${
                     index < (stampCardData?.stamps || 0)
-                      ? 'bg-orange-500 border-orange-500 text-white'
+                      ? 'bg-yellow-500 border-yellow-500 text-white'
                       : index === totalStamps - 1
                       ? 'bg-yellow-100 border-yellow-400 text-yellow-700'
                       : 'bg-white border-gray-300 text-gray-400'
@@ -750,9 +750,9 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
           </div>
 
           {/* Referral Program Section */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6">
+          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-6">
-              <Users className="w-8 h-8 text-blue-500" />
+              <Users className="w-8 h-8 text-yellow-600" />
               <div>
                 <h3 className="text-xl font-bold text-gray-900">Suosittele ystävää - Saat palkkion!</h3>
                 <p className="text-gray-600">Jaa koodisi ja saatte molemmat 5€ alennuksen</p>
@@ -763,7 +763,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
               <div className="text-center mb-4">
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Sinun koodisi</h4>
                 <div className="bg-gray-100 rounded-lg p-4 mb-4">
-                  <div className="text-lg sm:text-2xl font-bold text-orange-500 mb-2 break-all">
+                  <div className="text-lg sm:text-2xl font-bold text-yellow-600 mb-2 break-all">
                     {stampCardData?.referral_code || ''}
                   </div>
                   <button
@@ -771,7 +771,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                     className={`inline-flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                       copiedCode
                         ? 'bg-green-500 text-white'
-                        : 'bg-orange-500 text-white hover:bg-orange-600'
+                        : 'bg-yellow-500 text-black hover:bg-yellow-600'
                     }`}
                   >
                     {copiedCode ? (
@@ -836,16 +836,16 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
                   Yhteystiedot
                 </h3>
                 <div className="space-y-3">
-                  <a href="tel:+358407736334" className="flex items-center text-gray-700 hover:text-orange-500 transition-colors">
-                    <Phone className="w-4 h-4 mr-3 text-orange-500" />
+                  <a href="tel:+358407736334" className="flex items-center text-gray-700 hover:text-yellow-600 transition-colors">
+                    <Phone className="w-4 h-4 mr-3 text-yellow-500" />
                     040 773 6334
                   </a>
-                  <a href="mailto:asiakaspalvelu@k-parturi.fi" className="flex items-center text-gray-700 hover:text-orange-500 transition-colors">
-                    <Mail className="w-4 h-4 mr-3 text-orange-500" />
+                  <a href="mailto:asiakaspalvelu@k-parturi.fi" className="flex items-center text-gray-700 hover:text-yellow-600 transition-colors">
+                    <Mail className="w-4 h-4 mr-3 text-yellow-500" />
                     asiakaspalvelu@k-parturi.fi
                   </a>
                   <div className="flex items-center text-gray-700">
-                    <MapPin className="w-4 h-4 mr-3 text-orange-500" />
+                    <MapPin className="w-4 h-4 mr-3 text-yellow-500" />
                     <div>
                       <div>Heinolankaari 9, Kokkola</div>
                       <div className="text-sm text-gray-500">K-Citymarketissa</div>
@@ -856,7 +856,7 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
 
               <div className="bg-gray-50 rounded-2xl p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Clock className="w-6 h-6 mr-2 text-orange-500" />
+                  <Clock className="w-6 h-6 mr-2 text-yellow-500" />
                   Aukioloajat
                 </h3>
                 <div className="space-y-2 text-gray-700">
@@ -879,19 +879,19 @@ const StampCardContent: React.FC<StampCardContentProps> = ({
 
           {/* Call to Action */}
           {onOpenBooking && (
-            <div className="bg-orange-500 text-white rounded-2xl p-6 text-center">
+            <div className="bg-yellow-500 text-black rounded-2xl p-6 text-center">
               <h3 className="text-xl font-bold mb-2">Valmis seuraavaan käyntiin?</h3>
               <p className="mb-4 opacity-90">Varaa aikasi helposti verkossa tai tervetuloa myös ilman ajanvarausta.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button
                   onClick={onOpenBooking}
-                  className="bg-white text-orange-500 px-6 py-3 rounded-lg font-bold hover:bg-orange-50 transition-colors"
+                  className="bg-black text-yellow-400 px-6 py-3 rounded-lg font-bold hover:bg-gray-900 transition-colors"
                 >
                   Varaa aika
                 </button>
                 <a
                   href="tel:+358407736334"
-                  className="border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-orange-500 transition-colors"
+                  className="border-2 border-black px-6 py-3 rounded-lg font-bold hover:bg-black hover:text-yellow-400 transition-colors"
                 >
                   Soita nyt
                 </a>
